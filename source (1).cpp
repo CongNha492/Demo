@@ -3,9 +3,16 @@ using namespace std;
 int tong(int a, int b);
 int hieu(int a, int b);
 
+
 int hieu(int a, int b) {
 	return a - b;
 }
+
+int tong(int a, int b) {
+	return a + b;
+}
+
+
 int main()
 {
 	int a, b;
@@ -19,9 +26,16 @@ int main()
 
 	switch (phepToan)
 	{
+
 		case '-':
 		{
 			cout << "Hieu la: " << hieu(a, b);
+
+		case '+':
+		{
+			cout << "Tong la: " << tong(a, b);
+			break;
+
 		}
 		default:
 		{
